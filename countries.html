@@ -7,6 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="countries.css" />
     <script src="countries.js"></script>
+
+    <style>
+      .button {
+          background-color: rgb(76, 76, 129);
+          font-size: 16px;
+          border: none;
+          color: white;
+          padding: 10px 24px;
+          border-radius: 4px;
+          box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+      }
+    </style>
 </head>
 <body>
     <h1 style="color:rgb(200, 200, 255);">Favorite Countries</h1>
@@ -19,8 +35,8 @@
             <label for="capital">Enter Capital</label>
             <input type="text" name = "capital">
         </p>
-        <button type="submit">Add Country</button>
-        <button type="reset">Clear</button>
+        <button class = "button" type="submit">Add Country</button>
+        <button class = "button" type="reset">Clear</button>
     </form>
 
     <div id="countries"></div>

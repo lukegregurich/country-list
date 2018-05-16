@@ -1,7 +1,4 @@
 console.log('hello friend')
-
-const form = document.querySelector('form#enterCountry')
-
 const renderListItem = function(label, value){ 
   const item = document.createElement('li')
   item.textContent = `${label}: `
@@ -37,4 +34,7 @@ const handleSubmit = function(ev){
     form.countryName.focus()
   }
 
-  form.addEventListener('submit', handleSubmit)
+  const form = document.querySelector('form#enterCountry')
+  //if(form){
+    form.addEventListener('submit', handleSubmit)
+  //}
