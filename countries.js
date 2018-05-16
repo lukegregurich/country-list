@@ -19,6 +19,8 @@ const renderList = function(data){
     return list
 }
 
+
+
 const handleSubmit = function(ev){
     ev.preventDefault() 
     const form = ev.target
@@ -35,6 +37,4 @@ const handleSubmit = function(ev){
   }
 
   const form = document.querySelector('form#enterCountry')
-  //if(form){
-    form.addEventListener('submit', handleSubmit)
-  //}
+  form.addEventListener('submit', handleSubmit)
