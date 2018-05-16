@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+h1 {
+    font-family: fantasy;
+    font-size: 5ch;
+    display: flex;
+    justify-content: space-around
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    background-image: url("westernEurope.jpg");
+}
+
+main {
+    display: flex;
+    justify-content: space-around
+}
+
+#enterCountry {
+  background-color: #eeeeee;
+  border: 1px solid #e3e3e3;
+  padding: 1rem;
+}
+
+dl {
+  padding: 1rem;
+}
+
+dl li {
+  list-style: none; /*removes bullets*/
+  margin-top: 1rem;
+}
+
+dl:nth-of-type(even) {
+  background-color: whitesmoke;
+}
