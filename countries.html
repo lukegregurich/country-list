@@ -17,28 +17,35 @@
           padding: 10px 24px;
           border-radius: 4px;
           box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          width: 25%; 
+      }
+      #button1 {
+          width: 48.5%;
       }
       .button:hover {
         background-color: #4CAF50; /* Green */
         color: white;
       }
+      
     </style>
 </head>
 <body>
+    <main>
     <h1 style="color:rgb(200, 200, 255);">Favorite Countries</h1>
     <form id="enterCountry">
-        <p>
-            <label for="countryName">Enter Country</label>
-            <input type="text" name="countryName">
+        <p><b>
+            <label for="countryName">Enter Country: </label>
+            <input type="text" name="countryName" size=30 autofocus>
         </p>
         <p>
-            <label for="capital">Enter Capital</label>
-            <input type="text" name = "capital">
-        </p>
-        <button class = "button" type="submit">Add Country</button>
+            <label for="capital">Enter Capital: </label>
+            <input class = "entry" type="text" name = "capital" size=31>
+        </b></p>
+        <button id="button1" class = "button" type="submit">Add Country</button>
         <button class = "button" type="reset">Clear</button>
+        <button class = "button" type="reset">Delete</button>
     </form>
-
+    </main>
     <div id="countries"></div>
     <script src="countries.js"></script>
 </body>
